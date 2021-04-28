@@ -10,3 +10,9 @@ console.log(randomGiocatore);
 var randomPc = Math.floor(Math.random() * 6) + 1;
 console.log(randomPc);
 
+if (randomGiocatore > randomPc){
+    document.getElementById("messaggio").innerHTML = "Il giocatore vince";
+} else{
+    document.getElementById("messaggio").innerHTML = "Il PC vince";
+}
+
