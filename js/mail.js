@@ -20,7 +20,10 @@ console.log(emailAutorizzate);
 
 for (var i=0; i < emailAutorizzate.length; i++) {
     // Verifica autorizzazione email
-    if (emailAutorizzate.includes(email)) {
+    if (email == emailAutorizzate[i]){
+       var verifica = 1;
+    }
+    if (verifica == 1) {
         document.getElementById("messaggio").innerHTML = "Complimenti! L'indirizzo " + email + " è autorizzato a partecipare."
     } else{
         document.getElementById("messaggio").innerHTML = "Mi dispiace, l'indirizzo " + email + " non è autorizzato a partecipare"
