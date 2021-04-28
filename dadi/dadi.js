@@ -3,6 +3,10 @@
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // Generare numero random giocatore
-var random = Math.floor(math.random() * 6) + 1;
+var randomGiocatore = Math.floor(Math.random() * 6) + 1;
+console.log(randomGiocatore);
 
-console.log(random);
+// Generare numero random PC
+var randomPc = Math.floor(Math.random() * 6) + 1;
+console.log(randomPc);
+
