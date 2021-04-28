@@ -9,12 +9,21 @@
 
 // Esercizio 1
 
-// Lista indirizzi email autorizzati
-var emailAutorizzate = ["pippo@tiscali.it", "paperino@tiscali.it", "gianni@yahoo.it", "damianotrifone@gmail.com",
-"booleancareers@info.it"];
-
 // Inserimento dell'indirizzo email da parte dell'utente
 var email = prompt("Inserisci qui il tuo indirizzo email");
 console.log(email);
 
-// Verifica autorizzazione email
+// Lista indirizzi email autorizzati
+var emailAutorizzate = ["pippo@tiscali.it", "paperino@tiscali.it", "gianni@yahoo.it", "trifone.damiano@gmail.com",
+"booleancareers@info.it"];
+console.log(emailAutorizzate);
+
+for (var i=0; i < emailAutorizzate.length; i++) {
+    // Verifica autorizzazione email
+    if (emailAutorizzate.includes(email)) {
+        document.getElementById("messaggio").innerHTML = "Complimenti! L'indirizzo " + email + " è autorizzato a partecipare."
+    } else{
+        document.getElementById("messaggio").innerHTML = "Mi dispiace, l'indirizzo " + email + " non è autorizzato a partecipare"
+    }
+}
+
